@@ -6,6 +6,6 @@ COPY ./ ./
 
 RUN mkdir /records
 
-RUN make deps
+RUN pip install --no-cache-dir -r requirements.txt
 
 ENTRYPOINT [ "python", "./main.py" ]
