@@ -2,15 +2,9 @@
 .PHONY = build
 build: deps
 
-# Virtual Environment
-.PHONY = venv
-venv:
-	python -m venv .venv
-	source .venv/bin/activate
-
 # Deps
 .PHONY = deps
-deps: venv
+deps:
 	pip install -r requirements.txt
 
 # Docker Build
