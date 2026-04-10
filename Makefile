@@ -12,6 +12,11 @@ deps:
 docker/build:
 	docker build -t maruja .
 
+# Docker Clear
+.PHONY = docker/clear
+docker/clear:
+	docker rmi -f maruja
+
 # Build
 .PHONY = run
 run:
