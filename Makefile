@@ -15,7 +15,7 @@ docker/build:
 # Docker Clear
 .PHONY = docker/clear
 docker/clear:
-	docker rmi -f maruja
+	-docker rmi -f maruja
 
 # Build
 .PHONY = run
